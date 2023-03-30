@@ -5,5 +5,6 @@ import sky.project.models.City;
 import java.sql.SQLException;
 
 public interface CityDAO {
-    City findById(Integer id) throws SQLException;
+
+    City findCityById(Integer id) throws SQLException;
 }

@@ -12,7 +12,7 @@ public class CityDAOImpl implements CityDAO{
     private final ApplicationConnection applicationConnection = new ApplicationConnection();
 
     @Override
-    public City findById(Integer id) throws SQLException {
+    public City findCityById(Integer id) throws SQLException {
         try(PreparedStatement statement =
                     applicationConnection.getPreparedStatement("SELECT * FROM city WHERE city_id=(?)")){
             statement.setInt(1,id);
