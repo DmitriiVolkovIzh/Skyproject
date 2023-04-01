@@ -22,9 +22,9 @@ public class Application {
 
         // employeeDAO.hireNewEmployee("Данил","Ханов",87, 3);
 
-        //employeeDAO.refactorEmployee(1,"Алексей","Грачев",46,1);
+        employeeDAO.refactorEmployee(1,"Алексей","Грачев",46,1);
 
-        // employeeDAO.deleteEmployeeById(2);
+        employeeDAO.deleteEmployeeById(2);
 
         for (Employee employee:employeeDAO.getEmployees().toArray(new Employee[0]));
 
